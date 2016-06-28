@@ -41,7 +41,7 @@ function Piece( type ) {
 
 Piece.prototype.buildSquares = function() {
   var color = this.color;
-  this.squares = this.typeCoordinates.mpa( function( position ) {
+  this.squares = this.typeCoordinates.map( function( position ) {
     return new Square( position, color );
   });
 };
