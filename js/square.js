@@ -10,12 +10,12 @@ var rotateCollections = [
                           [ [ 0,0 ] ]
                         ];
 
-function sameCollection( firstCollection, secondCollection ) = function() {
+function sameCollection( firstCollection, secondCollection ) {
   if ( firstCollection.length !== secondCollection.length ) {
     return false;
   };
 
-  for ( var idx = firstCollection.length; idx-- ) {
+  for ( var idx = firstCollection.length; idx--; ) {
     if ( firstCollection[ idx ] !== secondCollection[ idx ] ) {
       return false;
     };

@@ -1,0 +1,53 @@
+header {
+  height: 150px;
+  background-color: #000;
+  text-align: center;
+}
+
+header h3 {
+  margin: 0;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+header p {
+  color: #fff;
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+header p a {
+  color: #fff;
+}
+
+header nav {
+  margin-top: 0px;
+}
+
+header nav p, a {
+  display: inline;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+div.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#next-piece-preview {
+  margin-left: 200px;
+}
+
+div#board-container {
+  margin-top: -140px;
+}
+td {
+  color: #fff;
+  border: 1px solid black;
+}
