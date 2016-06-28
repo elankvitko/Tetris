@@ -37,20 +37,20 @@ function Piece( type ) {
   this.buildSquares();
   this.trace = this.trace();
   this.previewTrace = this.previewTrace();
-}
+};
 
-Piece.prototype.buildSquares() = function() {
+Piece.prototype.buildSquares = function() {
   var color = this.color;
   this.squares = this.typeCoordinates.mpa( function( position ) {
     return new Square( position, color );
   });
 };
 
-Piece.prototyope.trace = function() {
+Piece.prototype.trace = function() {
   return [ this.currentCoordinates, this.squares[ 1 ].boardPosition( this.currentCoordinates ), this.squares[ 2 ].boardPosition( this.currentCoordinates ), this.squares[ 3 ].boardPosition( this.currentCoordinates ) ];
 };
 
-Piece.prototyope.previewTrace = function() {
+Piece.prototype.previewTrace = function() {
   return [ this.previewCoordinates, this.squares[ 1 ].boardPosition( this.previewCoordinates ), this.squares[ 2 ].boardPosition( this.previewCoordinates ), this.squares[ 3 ].boardPosition( this.previewCoordinates ) ];
 };
 
