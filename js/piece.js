@@ -34,4 +34,14 @@ function Piece( type ) {
   this.isCurrent = true;
   this.currentCoordinates = [ 2,5 ];
   this.previewCoordinates = [ 2,2 ];
+  this.buildSquares();
+  this.trace = this.setTrace();
+  this.previewTrace = this.setPreviewTrace();
 }
+
+Piece.prototype.buildSquares() = function() {
+  var color = this.color;
+  this.squares = this.typeCoordinates.mpa( function( coordinates ) {
+    return new Square( coordinates, color );
+  });
+};
