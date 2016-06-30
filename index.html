@@ -5,7 +5,7 @@
     <title>Tetris</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/display.js"></script>
     <script src="js/square.js"></script>
     <script src="js/piece.js"></script>
@@ -26,22 +26,32 @@
         <a href="https://www.github.com/elankvitko/Tetris">Source Code</a>
       </nav>
     </header>
-    <div class="container">
-      <h1>Tetris</h1>
+
+    <div id="game-container">
       <button id="begin" type="button">Start Game</button>
-      <table id="board-container">
+
+      <table id="preview">
       </table>
-      <table id="next-piece-preview">
+
+      <table id="game-board">
       </table>
-      <p>
-        Timer: <span id="timer"></span>
-      </p>
-      <p>
-        Score: <span id="score"></span>
-      </p>
-      <p>
-        Level: <span id="level">1</span>
-      </p>
+
+      <div id="game-info">
+        <p>Timer: <span id="timer"><span></p>
+        <p>Score: <span id="score"></span></p>
+        <p>Level: <span id="level">1</span></p>
+        <p id="hidden">Game Over! Refresh the page to play again.</p>
+        <p>
+          Instructions:
+          <br>
+          <br>
+          Use the left, down, and right arrow keys to move the piece
+          <br>
+          Use the up arrow key to rotate the piece
+          <br>
+          Use the space bar to skip the piece all the way to the bottom
+        </p>
+      </div>
     </div>
   </body>
 </html>

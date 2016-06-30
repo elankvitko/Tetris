@@ -28,7 +28,7 @@ Square.prototype.nextPosition = function() {
   for ( var idx = 0; idx < rotateCollections.length; idx++ ) {
     for ( var idx2 = 0; idx2 < rotateCollections[ idx ].length; idx2++ ) {
       if ( sameCollection( rotateCollections[ idx ][ idx2 ], this.position ) ) {
-        return rotateCollections[ idx ][ ( idx2 + 1 ) ] || rotateCollections[ idx2 ][ 0 ];
+        return rotateCollections[ idx ][ ( idx2 + 1 ) ] || rotateCollections[ idx ][ 0 ];
       };
     };
   };
