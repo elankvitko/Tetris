@@ -35,19 +35,66 @@ header nav a {
   text-decoration: none;
 }
 
-div.container {
-  padding-left: 20%;
-  padding-right: 20%;
+div#game-container {
+  text-align: center;
 }
 
-#next-piece-preview {
+div#game-info {
+  margin-top: 50px
+}
+
+button#begin {
+  background: none;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 30px;
+  margin-top: 60px;
+  float: right;
+  margin-right: 400px;
+}
+
+table#preview {
+  float: right;
+  margin-top: -18px;
+  margin-right: 40px;
+}
+
+table#game-board {
+  float: left;
   margin-left: 200px;
+  margin-top: -27px;
 }
 
-div#board-container {
-  margin-top: -140px;
-}
 td {
-  color: #fff;
+  color: white;
   border: 1px solid black;
+}
+
+#game-board {
+  float: left;
+}
+
+#game-board tr td {
+  padding: 5px;
+}
+
+table#preview tr td {
+  padding: 5px;
+}
+
+#game-board #row-0 td, #game-board #row-1 td, #game-board #row-2 td, #game-board #row-3 td {
+  display: none;
+}
+
+.full {
+  color: black;
+  background-color: black;
+}
+
+#hidden {
+  display: none;
+}
+
+.active {
 }
